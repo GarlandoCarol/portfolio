@@ -10,11 +10,13 @@
                 background-color: #f5f5dc; /* Beige chiaro */
                 color: #333; /* Testo scuro per contrasto */
                 font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
             }
             header, footer {
                 text-align: center;
                 padding: 20px;
-                background-color: #d3d3d3; /* Grigio chiaro */
+                background-color: #c0c0c0; /* Grigio medio per miglior contrasto */
             }
             nav ul {
                 list-style: none;
@@ -26,16 +28,30 @@
             }
             section {
                 padding: 20px;
+                max-width: 900px;
+                margin: auto;
             }
             .gallery {
-                display: flex;
-                justify-content: space-around;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 15px;
                 margin-top: 20px;
+                text-align: center;
             }
             .gallery img {
-                width: 200px;
+                width: 100%;
+                max-width: 300px;
                 height: auto;
                 border-radius: 10px;
+            }
+            @media screen and (max-width: 800px) {
+                .gallery {
+                    grid-template-columns: 1fr;
+                }
+                nav ul li {
+                    display: block;
+                    margin: 10px 0;
+                }
             }
         </style>
     </head>
@@ -78,3 +94,4 @@
         </footer>
     </body>
     </html>
+    
