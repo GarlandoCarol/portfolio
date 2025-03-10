@@ -5,33 +5,57 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Carol Garlando</title>
         <style>
+            :root {
+                --sfondo: rgba(205, 149, 220, 0.7); /* Nuovo colore di sfondo */
+                --testo: #333;
+                --viola-trasp: rgba(160, 0, 205, 0.7);
+                --testo-viola: #ece8e1;
+                --descrizione: #555;
+            }
+            
             body {
-                background-color: #ece8e1; /* Beige meno giallo */
-                color: #333; /* Testo scuro per contrasto */
+                background-color: var(--sfondo);
+                color: var(--testo);
                 font-family: Arial, sans-serif;
                 margin: 0;
                 padding: 0;
             }
+            
             header, footer {
                 text-align: center;
-                padding: 5px; /* Riduzione dell'altezza della barra superiore */
-                background-color: rgba(205, 149, 220, 0.7); /* Viola pastello trasparente */
-                color: #ece8e1; /* Testo dello stesso colore dello sfondo */
-                backdrop-filter: blur(10px); /* Effetto sfocatura */
+                padding: 5px;
+                background-color: var(--viola-trasp);
+                color: var(--testo-viola);
+                backdrop-filter: blur(10px);
             }
+            
             nav ul {
                 list-style: none;
                 padding: 0;
             }
+            
             nav ul li {
                 display: inline;
                 margin: 0 15px;
             }
+            
+            nav ul li a {
+                text-decoration: none;
+                color: var(--testo-viola);
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+            
+            nav ul li a:hover {
+                color: white;
+            }
+            
             section {
                 padding: 20px;
                 max-width: 100%;
                 margin: 0;
             }
+            
             .gallery {
                 display: flex;
                 flex-direction: column;
@@ -39,20 +63,32 @@
                 gap: 20px;
                 margin-top: 20px;
             }
+            
             .gallery-item {
                 text-align: center;
+                padding: 10px;
+                border-radius: 10px;
+                transition: transform 0.3s ease-in-out;
             }
+            
+            .gallery-item:hover {
+                transform: scale(1.05);
+            }
+            
             .gallery img {
                 width: 100%;
                 max-width: 600px;
                 height: auto;
                 border-radius: 10px;
             }
+            
             .description {
                 margin-top: 10px;
                 font-size: 14px;
-                color: #555;
+                color: var(--descrizione);
+                letter-spacing: 0.5px;
             }
+            
             @media screen and (max-width: 800px) {
                 nav ul li {
                     display: block;
@@ -76,7 +112,7 @@
         <main>
             <section id="about">
                 <h2>Chi sono</h2>
-                <p>Breve descrizione del mio percorso e della mia visione artistica.</p>
+                <p>Breve descrizione del mio percorso e della mio visione artistica.</p>
             </section>
             
             <section id="portfolio">
@@ -109,3 +145,4 @@
         </footer>
     </body>
     </html>
+    
