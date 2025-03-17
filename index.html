@@ -6,9 +6,9 @@
         <title>Portfolio - Carol Garlando</title>
         <style>
             :root {
-                --sfondo: rgba(248, 233, 252, 0.7); /* Nuovo colore di sfondo */
+                --sfondo: rgba(205, 149, 220, 0.7); /* Nuovo colore di sfondo */
                 --testo: #333;
-                --viola-trasp: rgba(176, 89, 200, 0.7);
+                --viola-trasp: rgba(160, 0, 205, 0.7);
                 --testo-viola: #ece8e1;
                 --descrizione: #555;
             }
@@ -64,30 +64,35 @@
                 margin-top: 20px;
             }
             
-            .gallery-item {
-                text-align: center;
-                padding: 10px;
-                border-radius: 10px;
-                transition: transform 0.3s ease-in-out;
-            }
-            
-            .gallery-item:hover {
-                transform: scale(1.05);
-            }
-            
-            .gallery img {
-                width: 100%;
+            .slider {
+                position: relative;
                 max-width: 600px;
-                height: auto;
+                overflow: hidden;
+            }
+            
+            .slides {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+            }
+            
+            .slides img {
+                width: 100%;
                 border-radius: 10px;
             }
             
-            .description {
-                margin-top: 10px;
-                font-size: 14px;
-                color: var(--descrizione);
-                letter-spacing: 0.5px;
+            .prev, .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
             }
+            
+            .prev { left: 10px; }
+            .next { right: 10px; }
             
             @media screen and (max-width: 800px) {
                 nav ul li {
@@ -112,22 +117,46 @@
         <main>
             <section id="about">
                 <h2>Chi sono</h2>
-                <p>Breve descrizione del mio percorso e della mio visione artistica.</p>
+                <p>Breve descrizione del mio percorso e della mia visione artistica.</p>
             </section>
             
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="gallery">
                     <div class="gallery-item">
-                        <img src="placeholder1.jpg" alt="Progetto 1">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="placeholder1.jpg" alt="Progetto 1 - Slide 1">
+                                <img src="placeholder1-2.jpg" alt="Progetto 1 - Slide 2">
+                                <img src="placeholder1-3.jpg" alt="Progetto 1 - Slide 3">
+                            </div>
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
                         <p class="description">Descrizione del Progetto 1</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="placeholder2.jpg" alt="Progetto 2">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="placeholder2.jpg" alt="Progetto 2 - Slide 1">
+                                <img src="placeholder2-2.jpg" alt="Progetto 2 - Slide 2">
+                                <img src="placeholder2-3.jpg" alt="Progetto 2 - Slide 3">
+                            </div>
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
                         <p class="description">Descrizione del Progetto 2</p>
                     </div>
                     <div class="gallery-item">
-                        <img src="placeholder3.jpg" alt="Progetto 3">
+                        <div class="slider">
+                            <div class="slides">
+                                <img src="placeholder3.jpg" alt="Progetto 3 - Slide 1">
+                                <img src="placeholder3-2.jpg" alt="Progetto 3 - Slide 2">
+                                <img src="placeholder3-3.jpg" alt="Progetto 3 - Slide 3">
+                            </div>
+                            <button class="prev">&#10094;</button>
+                            <button class="next">&#10095;</button>
+                        </div>
                         <p class="description">Descrizione del Progetto 3</p>
                     </div>
                 </div>
@@ -145,4 +174,3 @@
         </footer>
     </body>
     </html>
-    
