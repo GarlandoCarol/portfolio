@@ -6,9 +6,9 @@
         <title>Portfolio - Carol Garlando</title>
         <style>
             :root {
-                --sfondo: #d9b3e6; /* Tonalità di viola pastello */
+                --sfondo: #e8d9f1; /* Tonalità di viola più chiaro */
                 --testo: #333;
-                --viola-trasp: rgba(160, 0, 205, 0.7);
+                --viola-trasp: rgba(180, 140, 220, 0.7);
                 --testo-viola: #ece8e1;
                 --descrizione: #555;
             }
@@ -16,7 +16,8 @@
             body {
                 background-color: var(--sfondo);
                 color: var(--testo);
-                font-family: Arial, sans-serif;
+                font-family: "Poppins", sans-serif;
+                font-size: 14px;
                 margin: 0;
                 padding: 0;
             }
@@ -34,7 +35,8 @@
             
             header h1 {
                 margin: 0;
-                font-size: 1.5em;
+                font-size: 1.3em;
+                font-weight: 600;
             }
             
             nav {
@@ -45,7 +47,7 @@
             nav a {
                 text-decoration: none;
                 color: var(--testo-viola);
-                font-weight: bold;
+                font-weight: 600;
                 transition: color 0.3s;
             }
             
@@ -61,42 +63,21 @@
                 margin-top: 20px;
             }
             
-            .slider {
-                position: relative;
-                max-width: 600px;
-                overflow: hidden;
-                border-radius: 10px;
+            .gallery-item {
+                text-align: center;
             }
             
-            .slides {
-                display: flex;
-                transition: transform 0.5s ease-in-out;
-            }
-            
-            .slides img {
+            .gallery img {
                 width: 100%;
+                max-width: 600px;
+                height: auto;
                 border-radius: 10px;
             }
             
-            .slider-controls {
-                display: flex;
-                justify-content: center;
+            .description {
                 margin-top: 10px;
-            }
-            
-            .slider-controls button {
-                background-color: var(--viola-trasp);
-                border: none;
-                color: white;
-                padding: 8px 12px;
-                margin: 0 5px;
-                cursor: pointer;
-                border-radius: 5px;
-                transition: background 0.3s;
-            }
-            
-            .slider-controls button:hover {
-                background-color: rgba(160, 0, 205, 1);
+                font-size: 14px;
+                color: var(--descrizione);
             }
             
             .icons {
@@ -111,6 +92,12 @@
                 height: auto;
             }
             
+            .footer-section {
+                background-color: var(--viola-trasp);
+                color: var(--testo-viola);
+                text-align: center;
+                padding: 10px;
+            }
         </style>
     </head>
     <body>
@@ -128,49 +115,46 @@
                 <h2>Portfolio</h2>
                 <div class="gallery">
                     <div class="gallery-item">
-                        <div class="slider">
-                            <div class="slides">
-                                <img src="placeholder1.jpg" alt="Progetto 1 - Slide 1">
-                                <img src="placeholder1-2.jpg" alt="Progetto 1 - Slide 2">
-                                <img src="placeholder1-3.jpg" alt="Progetto 1 - Slide 3">
-                            </div>
-                        </div>
-                        <div class="slider-controls">
-                            <button>&#10094; Prev</button>
-                            <button>Next &#10095;</button>
-                        </div>
+                        <h3>Progetto 1</h3>
+                        <img src="placeholder1.jpg" alt="Progetto 1">
+                        <img src="placeholder1-2.jpg" alt="Progetto 1 - Slide 2">
+                        <img src="placeholder1-3.jpg" alt="Progetto 1 - Slide 3">
                         <p class="description">Descrizione del Progetto 1</p>
                     </div>
                     <div class="gallery-item">
-                        <div class="slider">
-                            <div class="slides">
-                                <img src="placeholder2.jpg" alt="Progetto 2 - Slide 1">
-                                <img src="placeholder2-2.jpg" alt="Progetto 2 - Slide 2">
-                                <img src="placeholder2-3.jpg" alt="Progetto 2 - Slide 3">
-                            </div>
-                        </div>
-                        <div class="slider-controls">
-                            <button>&#10094; Prev</button>
-                            <button>Next &#10095;</button>
-                        </div>
+                        <h3>Progetto 2</h3>
+                        <img src="placeholder2.jpg" alt="Progetto 2">
+                        <img src="placeholder2-2.jpg" alt="Progetto 2 - Slide 2">
+                        <img src="placeholder2-3.jpg" alt="Progetto 2 - Slide 3">
                         <p class="description">Descrizione del Progetto 2</p>
+                    </div>
+                    <div class="gallery-item">
+                        <h3>Progetto 3</h3>
+                        <img src="placeholder3.jpg" alt="Progetto 3">
+                        <img src="placeholder3-2.jpg" alt="Progetto 3 - Slide 2">
+                        <img src="placeholder3-3.jpg" alt="Progetto 3 - Slide 3">
+                        <p class="description">Descrizione del Progetto 3</p>
                     </div>
                 </div>
             </section>
             
-            <section id="contact">
+            <section id="skills">
+                <h2>Strumenti che utilizzo</h2>
+                <div class="icons">
+                    <img src="illustrator-logo.png" alt="Adobe Illustrator">
+                    <img src="photoshop-logo.png" alt="Adobe Photoshop">
+                    <img src="fresco-logo.png" alt="Adobe Fresco">
+                </div>
+            </section>
+            
+            <section id="contact" class="footer-section">
                 <h2>Contatti</h2>
                 <p>Email: tuaemail@example.com</p>
             </section>
+            
+            <footer class="footer-section">
+                <p>&copy; 2025 Carol Garlando - Tutti i diritti riservati</p>
+            </footer>
         </main>
-        
-        <footer>
-            <p>&copy; 2025 Carol Garlando - Tutti i diritti riservati</p>
-            <div class="icons">
-                <img src="illustrator-logo.png" alt="Adobe Illustrator">
-                <img src="photoshop-logo.png" alt="Adobe Photoshop">
-                <img src="figma-logo.png" alt="Figma">
-            </div>
-        </footer>
     </body>
     </html>
