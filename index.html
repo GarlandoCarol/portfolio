@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Carol Garlando</title>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+            
             :root {
                 --sfondo: #e8d9f1; /* Tonalità di viola più chiaro */
                 --testo: #333;
@@ -31,6 +33,8 @@
                 color: var(--testo-viola);
                 backdrop-filter: blur(10px);
                 font-weight: bold;
+                font-family: "Oswald", sans-serif;
+                text-transform: uppercase;
             }
             
             header h1 {
@@ -49,10 +53,35 @@
                 color: var(--testo-viola);
                 font-weight: 600;
                 transition: color 0.3s;
+                text-transform: uppercase;
             }
             
             nav a:hover {
                 color: white;
+            }
+            
+            .intro {
+                text-align: center;
+                padding: 40px 20px;
+            }
+            
+            .intro img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-bottom: 10px;
+            }
+            
+            .intro p {
+                max-width: 600px;
+                margin: auto;
+                font-size: 14px;
+                color: var(--descrizione);
+            }
+            
+            h2 {
+                text-align: center;
             }
             
             .gallery {
@@ -109,6 +138,11 @@
                 <a href="#contact">Contatti</a>
             </nav>
         </header>
+        
+        <section class="intro">
+            <img src="profile.jpg" alt="Foto di Carol Garlando">
+            <p>Breve descrizione su di me. Qui posso raccontare il mio percorso e la mia visione artistica.</p>
+        </section>
         
         <main>
             <section id="portfolio">
