@@ -6,9 +6,9 @@
         <title>Portfolio - Carol Garlando</title>
         <style>
             :root {
-                --sfondo: rgba(205, 149, 220, 0.7); /* Nuovo colore di sfondo */
+                --sfondo: #d9b3e6; /* Tonalità di viola pastello */
                 --testo: #333;
-                --viola-trasp: rgba(250, 233, 255, 0.7);
+                --viola-trasp: rgba(160, 0, 205, 0.7);
                 --testo-viola: #ece8e1;
                 --descrizione: #555;
             }
@@ -21,39 +21,36 @@
                 padding: 0;
             }
             
-            header, footer {
-                text-align: center;
-                padding: 5px;
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 20px;
                 background-color: var(--viola-trasp);
                 color: var(--testo-viola);
                 backdrop-filter: blur(10px);
+                font-weight: bold;
             }
             
-            nav ul {
-                list-style: none;
-                padding: 0;
+            header h1 {
+                margin: 0;
+                font-size: 1.5em;
             }
             
-            nav ul li {
-                display: inline;
-                margin: 0 15px;
+            nav {
+                display: flex;
+                gap: 15px;
             }
             
-            nav ul li a {
+            nav a {
                 text-decoration: none;
                 color: var(--testo-viola);
                 font-weight: bold;
                 transition: color 0.3s;
             }
             
-            nav ul li a:hover {
+            nav a:hover {
                 color: white;
-            }
-            
-            section {
-                padding: 20px;
-                max-width: 100%;
-                margin: 0;
             }
             
             .gallery {
@@ -68,6 +65,7 @@
                 position: relative;
                 max-width: 600px;
                 overflow: hidden;
+                border-radius: 10px;
             }
             
             .slides {
@@ -80,46 +78,52 @@
                 border-radius: 10px;
             }
             
-            .prev, .next {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;
+            .slider-controls {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+            
+            .slider-controls button {
+                background-color: var(--viola-trasp);
                 border: none;
-                padding: 10px;
+                color: white;
+                padding: 8px 12px;
+                margin: 0 5px;
                 cursor: pointer;
+                border-radius: 5px;
+                transition: background 0.3s;
             }
             
-            .prev { left: 10px; }
-            .next { right: 10px; }
-            
-            @media screen and (max-width: 800px) {
-                nav ul li {
-                    display: block;
-                    margin: 10px 0;
-                }
+            .slider-controls button:hover {
+                background-color: rgba(160, 0, 205, 1);
             }
+            
+            .icons {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                padding: 20px;
+            }
+            
+            .icons img {
+                width: 50px;
+                height: auto;
+            }
+            
         </style>
     </head>
     <body>
         <header>
             <h1>Carol Garlando</h1>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contatti</a></li>
-                </ul>
+                <a href="https://instagram.com/nabiihyogwa._">Instagram</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contatti</a>
             </nav>
         </header>
         
         <main>
-            <section id="about">
-                <h2>Chi sono</h2>
-                <p>Breve descrizione del mio percorso e della mia visione artistica.</p>
-            </section>
-            
             <section id="portfolio">
                 <h2>Portfolio</h2>
                 <div class="gallery">
@@ -130,8 +134,10 @@
                                 <img src="placeholder1-2.jpg" alt="Progetto 1 - Slide 2">
                                 <img src="placeholder1-3.jpg" alt="Progetto 1 - Slide 3">
                             </div>
-                            <button class="prev">&#10094;</button>
-                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="slider-controls">
+                            <button>&#10094; Prev</button>
+                            <button>Next &#10095;</button>
                         </div>
                         <p class="description">Descrizione del Progetto 1</p>
                     </div>
@@ -142,22 +148,12 @@
                                 <img src="placeholder2-2.jpg" alt="Progetto 2 - Slide 2">
                                 <img src="placeholder2-3.jpg" alt="Progetto 2 - Slide 3">
                             </div>
-                            <button class="prev">&#10094;</button>
-                            <button class="next">&#10095;</button>
+                        </div>
+                        <div class="slider-controls">
+                            <button>&#10094; Prev</button>
+                            <button>Next &#10095;</button>
                         </div>
                         <p class="description">Descrizione del Progetto 2</p>
-                    </div>
-                    <div class="gallery-item">
-                        <div class="slider">
-                            <div class="slides">
-                                <img src="placeholder3.jpg" alt="Progetto 3 - Slide 1">
-                                <img src="placeholder3-2.jpg" alt="Progetto 3 - Slide 2">
-                                <img src="placeholder3-3.jpg" alt="Progetto 3 - Slide 3">
-                            </div>
-                            <button class="prev">&#10094;</button>
-                            <button class="next">&#10095;</button>
-                        </div>
-                        <p class="description">Descrizione del Progetto 3</p>
                     </div>
                 </div>
             </section>
@@ -165,12 +161,16 @@
             <section id="contact">
                 <h2>Contatti</h2>
                 <p>Email: tuaemail@example.com</p>
-                <p>Instagram: <a href="https://instagram.com/nabiihyogwa._">@nabiihyogwa._</a></p>
             </section>
         </main>
         
         <footer>
             <p>&copy; 2025 Carol Garlando - Tutti i diritti riservati</p>
+            <div class="icons">
+                <img src="illustrator-logo.png" alt="Adobe Illustrator">
+                <img src="photoshop-logo.png" alt="Adobe Photoshop">
+                <img src="figma-logo.png" alt="Figma">
+            </div>
         </footer>
     </body>
     </html>
