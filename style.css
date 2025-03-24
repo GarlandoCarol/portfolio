@@ -1,3 +1,10 @@
+.hero {
+    background-image: url('https://i.pinimg.com/736x/68/bf/8e/68bf8e6df0e93e0a2b6b5797592b1182.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    width: 100%;
+}
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Dancing+Script:wght@600&display=swap');
 
 :root {
