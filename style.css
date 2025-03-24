@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Dancing+Script:wght@600&display=swap');
+
+:root {
+    --sfondo: #e8d9f1;
+    --testo: #333;
+    --viola-trasp: rgba(180, 140, 220, 0.7);
+    --testo-viola: #ece8e1;
+    --descrizione: #555;
+}
+
+body {
+    background-color: var(--sfondo);
+    color: var(--testo);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--viola-trasp);
+    color: var(--testo-viola);
+    backdrop-filter: blur(10px);
+    font-weight: bold;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--testo-viola);
+    font-weight: 400;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.intro img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.intro p {
+    font-size: 14px;
+    color: var(--descrizione);
+    flex: 1;
+}
+
+h2 {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.signature {
+    font-family: "Dancing Script", cursive;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    margin: 40px 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.icons img {
+    width: 50px;
+    height: auto;
+}
+
+.footer-section {
+    background-color: var(--viola-trasp);
+    color: var(--testo-viola);
+    text-align: center;
+    padding: 20px;
+}
