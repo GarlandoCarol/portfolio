@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Carol Garlando</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <header>
@@ -27,21 +25,17 @@
     <main>
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <div class="gallery">
-                <div class="gallery-item">
+            <div class="project-container">
+                <div class="project-description">
                     <h3>Progetto 1</h3>
-                    <img src="placeholder1.jpg" alt="Progetto 1">
-                    <p class="description">Descrizione del Progetto 1</p>
+                    <p>Descrizione dettagliata del Progetto 1. Spiegazione del concept, ispirazioni e obiettivi.</p>
                 </div>
-                <div class="gallery-item">
-                    <h3>Progetto 2</h3>
-                    <img src="placeholder2.jpg" alt="Progetto 2">
-                    <p class="description">Descrizione del Progetto 2</p>
-                </div>
-                <div class="gallery-item">
-                    <h3>Progetto 3</h3>
-                    <img src="placeholder3.jpg" alt="Progetto 3">
-                    <p class="description">Descrizione del Progetto 3</p>
+                <div class="project-gallery">
+                    <div class="slider">
+                        <img src="placeholder1.jpg" alt="Progetto 1 - Slide 1">
+                        <img src="placeholder2.jpg" alt="Progetto 1 - Slide 2">
+                        <img src="placeholder3.jpg" alt="Progetto 1 - Slide 3">
+                    </div>
                 </div>
             </div>
         </section>
@@ -58,7 +52,39 @@
         </section>
         
         <section id="contact" class="footer-section">
-            <h2>Contatti</h2>
+         <div id="dove-trovarmi" class="section map-container">
+            <h2>Dove trovarmi</h2>
+            <iframe 
+                width="100%" 
+                height="400" 
+                frameborder="0" 
+                style="border:0" 
+                allowfullscreen 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45211.65120423933!2d8.55605845975507!3d44.908524893777134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47877431ed416505%3A0xd647f5990f0c62d9!2sAlessandria%20AL!5e0!3m2!1sit!2sit!4v1743436931775!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+        </div>
+                <label for="name">Il tuo nome</label> 
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">La tua email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Il tuo messaggio</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <div class="form-group privacy-checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Accetto la privacy policy e il trattamento dei miei dati personali *</label>
+                </div>
+                
+                <button type="submit">Invia</button>
+            </form>
+            
+            </form>
+        </div>
+    </div>     
+          <h2>Contatti</h2>
             <p>Email: tuaemail@example.com</p>
             <p>Instagram: <a href="https://instagram.com/nabiihyogwa._">@nabiihyogwa._</a></p>
         </section>
