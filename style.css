@@ -49,6 +49,7 @@ header {
     font-weight: bold;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+    flex-wrap: wrap;
 }
 
 header h1 {
@@ -68,6 +69,30 @@ nav a {
     font-weight: 400;
     transition: color 0.3s;
     text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.1em; 
+    }
+
+    nav a {
+        font-size: 12px;
+    }
 }
 
 nav a:hover {
