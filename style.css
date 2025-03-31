@@ -72,7 +72,7 @@ nav a {
 }
 @media (max-width: 768px) {
     header {
-        justify-content: center;
+        justify-content: center; /* Centra il contenuto quando lo schermo è più piccolo */
     }
 
     nav {
