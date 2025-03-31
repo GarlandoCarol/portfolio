@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 100vh; 
+    min-height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,8 +49,10 @@ header {
     font-weight: bold;
     font-family: "Oswald", sans-serif;
     text-transform: uppercase;
+  text-transform: uppercase;
+    flex-wrap: wrap; 
+    gap: 20px;
 }
-
 
 header h1 {
     margin: 0;
@@ -61,6 +63,8 @@ header h1 {
 nav {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 nav a {
@@ -70,35 +74,24 @@ nav a {
     transition: color 0.3s;
     text-transform: uppercase;
 }
-@media (max-width: 768px) {
-    header {
-        justify-content: center; /* Centra il contenuto quando lo schermo è più piccolo */
-    }
-
-    nav {
-        flex-direction: column; 
-        gap: 10px;
-    }
-
-    nav a {
-        font-size: 14px; 
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.1em; 
-    }
-
-    nav a {
-        font-size: 12px;
-    }
-}
 
 nav a:hover {
     color: white;
 }
-
+@media (max-width: 768px) {
+    header {
+        padding: 10px 10px;
+        font-size: 1em; 
+        justify-content: center; 
+    }
+    header h1 {
+        font-size: 1em; 
+    }
+    nav {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+}
 .intro {
     display: flex;
     align-items: center;
