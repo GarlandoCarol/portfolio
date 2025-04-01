@@ -88,9 +88,112 @@ nav a:hover {
     }
     nav {
         flex-direction: column; 
-        gap: 10px; 
+        gap: 0px; 
     }
 }
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    background-color: var(--viola-trasp);
+    color: var(--testo-viola);
+    border: none;
+    padding: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 80%;
+    border: 2px solid var(--testo-viola);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn:hover {
+    background-color: white;
+    color: var(--viola-trasp);
+    transform: scale(1.2);
+}
+
+.carousel-btn.left {
+    left: -50px;
+}
+
+.carousel-btn.right {
+    right: -50px;
+}
+
+@media (max-width: 768px) {
+    .carousel-btn {
+        padding: 10px;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+    }
+    .carousel-btn.left {
+        left: -30px;
+    }
+    .carousel-btn.right {
+        right: -30px;
+    }
+
+}
+#suggested-combos {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--sfondo);
+}
+
+.combo-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.combo-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    max-width: 250px;
+}
+
+.combo-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.combo-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--testo);
+}
+
+.combo-card p {
+    font-size: 14px;
+    color: var(--descrizione);
+}
+
+.combo-card:hover {
+    transform: scale(1.05);
+}
+
 .intro {
     display: flex;
     align-items: center;
