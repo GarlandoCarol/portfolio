@@ -1,4 +1,3 @@
-<script>
 document.addEventListener('DOMContentLoaded', function () {
     const sliders = document.querySelectorAll('.slider-wrapper');
 
