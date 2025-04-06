@@ -13,18 +13,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
         function updateSlider(index) {
             if (index >= slides.length) {
-                currentIndex = 0;  // Torna alla prima card se si arriva all'ultima
+                currentIndex = 0;  
             } else if (index < 0) {
-                currentIndex = slides.length - 1;  // Torna all'ultima card se si va oltre la prima
+                currentIndex = slides.length - 1;  
             } else {
                 currentIndex = index;
             }
 
-            // Calcola l'offset per spostare la slider
             const offset = -currentIndex * 100;
             sliderContainer.style.transform = `translateX(${offset}%)`;
 
-            // Aggiorna i punti (se presenti)
             dots.forEach(dot => dot.classList.remove('active'));
             if (dots.length > 0) {
                 dots[currentIndex].classList.add('active');
@@ -47,11 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        // Inizializza la slider
         updateSlider(currentIndex);
     });
 
-    // Scroll smooth per i link ancorati
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
