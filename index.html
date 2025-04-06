@@ -29,10 +29,10 @@
                 <div class="project-description">
                     <h3>Progetto 1</h3>
                     <p>Descrizione dettagliata dei progetti realizzati e cosa mostrerò. Spiegazione del concept, ispirazioni e obiettivi.</p>
-                  <section id="suggested-combos">
+                <section id="suggested-combos">
     <h2>Progetto 1</h2>
-    <div class="slider-wrapper" data-slider="1">
-        <button class="carousel-btn left">&#10094;</button>
+    <div class="slider-container">
+        <button class="prev-btn">&#10094;</button>
         <div class="slider">
             <div class="combo-card">
                 <img src="combo1.jpg" alt="Look 1">
@@ -47,19 +47,15 @@
                 <h3>Foto 3</h3>
             </div>
         </div>
-        <button class="carousel-btn right">&#10095;</button>
-        <div class="slider-nav">
-            <div class="slider-dot active" data-index="0" data-slider="1"></div>
-            <div class="slider-dot" data-index="1" data-slider="1"></div>
-            <div class="slider-dot" data-index="2" data-slider="1"></div>
-        </div>
+        <button class="next-btn">&#10095;</button>
     </div>
 </section>
 
+<!-- SEZIONE 2 -->
 <section id="suggested-outfits">
     <h2>Progetto 2</h2>
-    <div class="slider-wrapper" data-slider="2">
-        <button class="carousel-btn left">&#10094;</button>
+    <div class="slider-container">
+        <button class="prev-btn">&#10094;</button>
         <div class="slider">
             <div class="combo-card">
                 <img src="outfit1.jpg" alt="Outfit 1">
@@ -74,19 +70,15 @@
                 <h3>Foto 3</h3>
             </div>
         </div>
-        <button class="carousel-btn right">&#10095;</button>
-        <div class="slider-nav">
-            <div class="slider-dot active" data-index="0" data-slider="2"></div>
-            <div class="slider-dot" data-index="1" data-slider="2"></div>
-            <div class="slider-dot" data-index="2" data-slider="2"></div>
-        </div>
+        <button class="next-btn">&#10095;</button>
     </div>
 </section>
 
+<!-- SEZIONE 3 -->
 <section id="trend-alerts">
     <h2>Progetto 3</h2>
-    <div class="slider-wrapper" data-slider="3">
-        <button class="carousel-btn left">&#10094;</button>
+    <div class="slider-container">
+        <button class="prev-btn">&#10094;</button>
         <div class="slider">
             <div class="combo-card">
                 <img src="trend1.jpg" alt="Trend 1">
@@ -101,12 +93,7 @@
                 <h3>Foto 3</h3>
             </div>
         </div>
-        <button class="carousel-btn right">&#10095;</button>
-        <div class="slider-nav">
-            <div class="slider-dot active" data-index="0" data-slider="3"></div>
-            <div class="slider-dot" data-index="1" data-slider="3"></div>
-            <div class="slider-dot" data-index="2" data-slider="3"></div>
-        </div>
+        <button class="next-btn">&#10095;</button>
     </div>
 </section>
         
@@ -134,18 +121,27 @@
                 referrerpolicy="no-referrer-when-downgrade"
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45211.65120423933!2d8.55605845975507!3d44.908524893777134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47877431ed416505%3A0xd647f5990f0c62d9!2sAlessandria%20AL!5e0!3m2!1sit!2sit!4v1743436931775!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
         </div>
-                <section class="contact">
-    <h2>Contattami!</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Il tuo nome" required>
-        <input type="email" placeholder="La tua email" required>
-        <textarea rows="5" placeholder="Il tuo messaggio" required></textarea>
-      <input type="checkbox" id="privacy" name="privacy" required>
-<label for="privacy">Accetto la privacy policy e il trattamento dei miei dati personali *</label>
-<button type="submit">Invia messaggio</button>
+                <label for="name">Il tuo nome</label> 
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">La tua email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Il tuo messaggio</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <div class="form-group privacy-checkbox">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Accetto la privacy policy e il trattamento dei miei dati personali *</label>
                 </div>
-                  </form>
- <h2>Contatti</h2>
+                
+                <button type="submit">Invia</button>
+            </form>
+            
+            </form>
+        </div>
+    </div>     
+          <h2>Contatti</h2>
             <p>Email: tuaemail@example.com</p>
             <p>Instagram: <a href="https://instagram.com/nabiihyogwa._">@nabiihyogwa._</a></p>
         </section>
