@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    min-height: 140vh;
+    min-height: 130vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,18 +65,9 @@ header h1 {
 }
 
 nav {
-    display: flex;
-    gap: 20px;
-}
-
-@media (max-width: 768px) {
-    nav {
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+    flex-direction: column; 
+    gap: 10px; 
+    align-items: flex-start;
 }
 
 nav a {
@@ -149,27 +140,19 @@ nav a:hover {
     right: -60px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .carousel-btn {
-        width: 25px;
-        height: 25px;
-        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
     }
 
     .carousel-btn.left {
-        left: -20px;
+        left: -30px;
     }
 
     .carousel-btn.right {
-        right: -20px;
-    }
-  .combo-card h3 {
-        font-size: 14px;
-        margin: 20px 0;
-    }
-
-    .combo-card p {
-        font-size: 12px;
+        right: -30px;
     }
 }
 
@@ -199,7 +182,7 @@ nav a:hover {
     padding: 20px;
     text-align: center;
     flex: 0 0 100%;
-    max-width: 10%;
+    max-width: 100%;
     box-sizing: border-box;
     margin: 2px;
 }
@@ -224,13 +207,13 @@ nav a:hover {
 }
 
 .combo-card h3 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 200px 0 20px;
     color: var(--testo);
 }
 
 .combo-card p {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--descrizione);
 }
 
@@ -269,11 +252,11 @@ nav a:hover {
 }
 
 .carousel-btn.left {
-    left: 5px;
+    left: 13px;
 }
 
 .carousel-btn.right {
-    right: 5px;
+    right: 13px;
 }
 
 .carousel-btn:hover {
@@ -301,23 +284,6 @@ nav a:hover {
     font-size: 14px;
     color: var(--descrizione);
     flex: 1;
-}
-
-.intro {
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .intro {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .intro img {
-        margin: 0 auto 20px auto;
-    }
 }
 
 h2 {
@@ -441,7 +407,7 @@ h2 {
     font-family: "Oswald", sans-serif;
     border-radius: 30px;
     cursor: pointer;
-    transition: all 0.s ease;
+    transition: all 0.4s ease;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
