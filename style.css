@@ -103,50 +103,52 @@ nav a:hover {
     margin: auto;
 }
 
+/* UNIFICATO: stile base per i pulsanti del carosello */
 .carousel-btn {
     position: absolute;
     top: 50%;
-    transform: translateY(-30%);
+    transform: translateY(-50%);
     background-color: var(--viola-trasp);
     color: var(--testo-viola);
     border: none;
-    padding: 15px;
     font-size: 24px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-    border-radius: 80%;
-    border: 2px solid var(--testo-viola);
+    border-radius: 50%;
     width: 50px;
     height: 50px;
+    cursor: pointer;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+    border: 2px solid var(--testo-viola);
 }
 
 .carousel-btn:hover {
     background-color: white;
     color: var(--viola-trasp);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .carousel-btn.left {
-    left: -50px;
+    left: -60px;
 }
 
 .carousel-btn.right {
-    right: -50px;
+    right: -60px;
 }
 
 @media (max-width: 768px) {
     .carousel-btn {
-        padding: 10px;
-        font-size: 20px;
         width: 30px;
         height: 30px;
+        font-size: 18px;
     }
+
     .carousel-btn.left {
         left: -30px;
     }
+
     .carousel-btn.right {
         right: -30px;
     }
