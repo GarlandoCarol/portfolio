@@ -200,13 +200,11 @@ nav a:hover {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-    aspect-ratio: 3 / 2;
-    object-fit: cover;
 }
 
 .combo-card h3 {
     font-size: 16px;
-    margin: 20px 0 50px;
+    margin: 200px 0 50px;
     color: var(--testo);
 }
 
@@ -236,52 +234,30 @@ nav a:hover {
 
 .carousel-btn {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-10%);
     background-color: var(--viola-trasp);
     color: var(--testo-viola);
-    border: 2px solid var(--testo-viola);
+    border: none;
     font-size: 24px;
     border-radius: 50%;
     width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s, transform 0.2s;
-
 }
 
 .carousel-btn.left {
-    left: 15px;
+    left: 5px;
 }
 
 .carousel-btn.right {
-    right: 15px;
+    right: 5px;
 }
 
 .carousel-btn:hover {
     background-color: white;
     color: var(--viola-trasp);
-    transform: scale(1.1);
-}
-
-@media (max-width: 768px) {
-    .carousel-btn {
-        width: 30px;
-        height: 30px;
-        font-size: 18px;
-    }
-
-    .carousel-btn.left {
-        left: -30px;
-    }
-
-    .carousel-btn.right {
-        right: -30px;
-    }
 }
 
 .intro {
