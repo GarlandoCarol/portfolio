@@ -3,7 +3,7 @@ Sito web dove sono inseriti alcuni dei progetti realizzati durante il mio percor
 
 ## Dati necessari
 -  ACME Novara: Anno Accademico 2024/2025
-- _corso_ :Web design
+- _corso_ : Web design
 - _studente_: Garlando Carol
 - _numero di matricola_: 1044
 - _docente_ : Matteo Baccan
