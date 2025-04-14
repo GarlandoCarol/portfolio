@@ -232,7 +232,7 @@ nav a:hover {
 
 .carousel-btn {
     position: absolute;
-    top: 30%;
+    top: 40%;
     transform: translateY(-10%);
     background-color: var(--viola-trasp);
     color: var(--testo-viola);
