@@ -194,12 +194,6 @@ nav a:hover {
     }
 }
 
-@media (min-width: 600px) {
-    .combo-card {
-        flex: 0 0 calc(33.3333% - 20px);
-        max-width: calc(33.3333% - 20px);
-    }
-}
 .combo-card img {
     width: 100%;
     height: auto;
