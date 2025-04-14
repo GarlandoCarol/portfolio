@@ -156,7 +156,7 @@ nav a:hover {
     }
 }
 
-#suggested-combos {
+#suggested-combos, suggested-outfits, trend-alerts {
     text-align: center;
     padding: 50px 20px;
     background-color: var(--sfondo);
