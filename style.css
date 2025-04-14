@@ -221,7 +221,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-top: 70px;
+    margin-top: 10px;
 }
 
 .slider-dot {
