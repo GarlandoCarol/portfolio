@@ -1,4 +1,11 @@
 # Sito Web Portfolio di Garlando Carol
+-  ACME Novara: Anno Accademico 2024/2025
+- _corso_ : Web design
+- _studente_: Garlando Carol
+- _numero di matricola_: 1044
+- _docente_ : Matteo Baccan
+
+## Scopo del progetto
 Questo portfolio raccoglie e presenta il mio lavoro come fashion designer. Il sito si caratterizza per un layout moderno e responsivo, pensato per offrire una user experience fluida.
 Il sito si propone come una vetrina dei miei lavori, includendo diverse sezioni che mostrano i progetti realizzati, le competenze professionali e i servizi offerti. Tra le funzionalità principali, troviamo:
 
@@ -11,19 +18,8 @@ Il sito si propone come una vetrina dei miei lavori, includendo diverse sezioni 
 *Obiettivo del Progetto*
 Il sito funge da biglietto da visita digitale, consentendo di costruire un’identità professionale forte e ben definita, mentre si esplora nuove opportunità nel campo del design.
 
-## Dati necessari
--  ACME Novara: Anno Accademico 2024/2025
-- _corso_ : Web design
-- _studente_: Garlando Carol
-- _numero di matricola_: 1044
-- _docente_ : Matteo Baccan
-Scopo del progetto
-Lo scopo di questo progetto è realizzare un sito web mono-pagina responsive realizzato in HTML5 e CSS. Il repository è pubblicato a questo indirizzo pubblico: https://vittorio-portfolio.netlify.app/
 
-## Repository
-Di seguito è inserito il link del repository: 
-
-- Netlify: https://portfoliogcarol.netlify.app/
+Il repository è pubblicato a questo indirizzo pubblico: https://portfoliogcarol.netlify.app/
 
 
 ### Elementi utilizzati per la realizzazione
