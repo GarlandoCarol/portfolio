@@ -443,3 +443,18 @@ h2 {
     border: 0;
     filter: grayscale(20%) brightness(95%);
 }
+#portfolio {
+    padding: 60px 20px;
+  }
+  
+  .project-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .project-description {
+    max-width: 800px;
+    padding: 20px;
+    text-align: left;
+  }
+  
