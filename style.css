@@ -58,8 +58,8 @@ body {
     color: var(--testo);
     font-family: "Poppins", sans-serif;
     font-size: 12px;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 6;
 }
 
 header {
