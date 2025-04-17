@@ -5,7 +5,7 @@ header {
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px 20px;
     background-color: rgba(180, 140, 220, 0.7); 
