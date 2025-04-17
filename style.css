@@ -32,7 +32,6 @@ header {
     font-size: 24px;
     font-family: "Oswald", sans-serif;
     padding: 0 20px;
-    padding-top: 100px;
 }
 
 @media (max-width: 768px) {
