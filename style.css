@@ -499,3 +499,36 @@ h2 {
   padding: 20px;
   text-align: center;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.overlay-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  z-index: 2;
+  pointer-events: none; 
+}
+
+.overlay-message h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2rem, 5vw, 4rem); 
+  color: #6b4c3b;
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7); 
+  margin: 0;
+  animation: fadeInDown 1s ease-out;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
